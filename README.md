@@ -10,3 +10,5 @@ Logic based game
 - jQuery
 
 # author
+
+Kevin Macaraeg

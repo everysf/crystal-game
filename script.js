@@ -8,22 +8,24 @@ var scores = {
     goals: 0
 }
 
+var end = scores.target;
+
 // Display
 function updateDisplay() {
     console.log("Target score = " + scores.target);
     $(".displayTarget").text(scores.target);
-    $(".displayCurrent").text(scores.current);
     $(".displayGoals").text(scores.goals);
 }
 
 // Display new values
 function newValues() {
+    console.log("New game start");
     jewel1 = Math.floor(Math.random() * 15) + 1;
-    console.log("New value of jewel1 = " + jewel1)
+    console.log("Value of jewel 1 = " + jewel1)
     jewel2 = Math.floor(Math.random() * 15) + 1;
-    console.log("New value of jewel2 = " + jewel2)
+    console.log("Value of jewel 2 = " + jewel2)
     jewel3 = Math.floor(Math.random() * 15) + 1;
-    console.log("New value of jewel3 = " + jewel3)
+    console.log("Value of jewel 3 = " + jewel3)
 };
 
 newValues();
@@ -32,33 +34,23 @@ newValues();
 $(".jewel1").on("click", function () {
     scores.target -= jewel1;
     updateDisplay();
-    console.log("Updated score: " + scores.current)
 });
-
 
 $(".jewel2").on("click", function () {
     scores.target -= jewel2;
     updateDisplay();
-    console.log("Updated score: " + scores.current)
 });
 
 $(".jewel3").on("click", function () {
     scores.target -= jewel3;
     updateDisplay();
-    console.log("Updated score: " + scores.current)
 });
 
-
-// When to stop the game
-$(".jewel").on ("click", function () {
-    if (scores.target === 0) {
-        newValues();
-        scores.goals++;
-        updateDisplay();
-    } else if (scores.target < 0) {
-        newValues();
-        updateDisplay();
-    }
-});
-
-// $(".displayCurrent").text(scores.current);
+// End or reset game
+$(document).on("click", function() {
+if (end === 0) {
+    $(".message").text("win")
+} else if (end < 0) {
+    $(".message").text("try again")
+}
+})
