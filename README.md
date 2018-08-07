@@ -1,14 +1,25 @@
-# crystal-game
+# Crystal-game
 
-Logic based game
+Logic based game.
+Indiana Jones themed!
 
-# technologies used
+## Link
+
+[Go to website](https://everysf.github.io/crystal-game/)
+
+![screenshot](img/screenshot.png)
+
+# Technologies used
 
 - HTML
 - CSS
 - Javascript
 - jQuery
 
-# author
+# Behind the scenes
+
+Check console for cheats
+
+# Author
 
 Kevin Macaraeg
