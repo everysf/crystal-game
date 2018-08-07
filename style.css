@@ -15,6 +15,7 @@ body {
     border: 10px solid black;
     box-shadow: -50px 10px 30px rgba(0,0,0,0);
     transition: 1s ease;
+
 }
 
 .mainSection:hover {
@@ -74,7 +75,7 @@ body {
     background-color:rgba(255,255,255,.9);
     height: 50px;
     padding: 10px 20px;
-    margin: 20px auto 40px;
+    margin: 20px auto 10px;
 }
 
 .displayLose {
@@ -108,6 +109,10 @@ body {
 
 .scoreBox:hover {
     border: 5px solid black;
+}
+
+.score {
+    margin-bottom: 40px
 }
 
 .header {
