@@ -4,7 +4,6 @@ var jewel2;
 var jewel3;
 
 var scores = {
-    current: 0,
     target: Math.floor(Math.random() * 100) + 50,
     goals: 0
 }
@@ -12,7 +11,6 @@ var scores = {
 // Display
 function updateDisplay() {
     console.log("Target score = " + scores.target);
-    console.log("Current score = " + scores.current);
     $(".displayTarget").text(scores.target);
     $(".displayCurrent").text(scores.current);
     $(".displayGoals").text(scores.goals);
@@ -29,8 +27,6 @@ function newValues() {
 };
 
 newValues();
-
-console.log("New value of jewel1 = " + jewel1);
 
 // Add score
 $(".jewel1").on("click", function () {
