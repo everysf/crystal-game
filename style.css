@@ -3,6 +3,8 @@ body {
     background-image: url(img/cave.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
+    padding:0;
+    left: 0
 }
 
 .mainSection {
@@ -106,4 +108,37 @@ body {
 
 .scoreBox:hover {
     border: 5px solid black;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    margin: 0;
+    top: 0;
+    width: 100%;
+    position: fixed;
+}
+
+.headerType {
+    letter-spacing: 2px;
+    margin: 3px;
+    text-align: right;
+    padding-right: 10px;
+    font-size: 10px;
+    width: 160px;
+    float: right;
+}
+
+.headerType:hover {
+    letter-spacing: 4px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: .2s ease;
+}
+
+a:hover {
+    color: yellow;
 }
