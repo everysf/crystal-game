@@ -13,9 +13,9 @@ var scores = {
 function updateDisplay() {
     console.log("Target score = " + scores.target);
     console.log("Current score = " + scores.current);
-    $(".displayTarget").text("Target score: " + scores.target);
-    $(".displayCurrent").text("Current score: " + scores.current);
-    $(".displayGoals").text("Goals: " + scores.goals);
+    $(".displayTarget").text(scores.target);
+    $(".displayCurrent").text(scores.current);
+    $(".displayGoals").text(scores.goals);
 }
 
 // Display new values
@@ -24,7 +24,7 @@ function newValues() {
     console.log("New value of jewel1 = " + jewel1)
     jewel2 = Math.floor(Math.random() * 10) + 1;
     console.log("New value of jewel2 = " + jewel2)
-    jewel3 = Math.floor(Math.random() * 10) + 1;
+    jewel3 = Math.floor(Math.random() * 0) + 1;
     console.log("New value of jewel3 = " + jewel3)
 };
 
