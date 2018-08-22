@@ -70,4 +70,22 @@ $(document).on("click", function() {
     } else {
         $(".message").text("")
     }
+
+    if (scores.losses > 10) {
+        $(".message").css('color', 'red');
+        $(".message").text("GAME OVER")
+        var reser = setTimeout(location.reload(), 5000)
+    }
+
+    if (scores.wins > 10) {
+        $(".video").show()
+        $(".video").autoplay = true;
+        setTimeout(function(){
+            $(".video").css("animation", "1s fadeout")
+        }, 13000)
+        setTimeout(function(){
+            $(".video").hide()
+        }, 14000)
+    }
+
 })

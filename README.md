@@ -20,6 +20,6 @@ Indiana Jones themed!
 
 Check console for cheats
 
-# Author
+# Designer
 
 Kevin Macaraeg

@@ -4,18 +4,18 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     padding:0;
-    left: 0
+    left: 0;
+    overflow: hidden;
 }
 
 .mainSection {
     background-color: rgba(255,255,255,.8);
     max-width: 400px;
-    margin: 80px auto;
+    margin: 0 auto;
     padding: 30px;
     border: 10px solid black;
     box-shadow: -50px 10px 30px rgba(0,0,0,0);
     transition: 1s ease;
-
 }
 
 .mainSection:hover {
@@ -146,4 +146,64 @@ a {
 
 a:hover {
     color: yellow;
+}
+
+.sectionWrap {
+    height: 100vh;
+    width: 100%;
+    padding: 50px;
+}
+
+.rules {
+    position: fixed;
+    left: 0;
+    background-color: rgba(255,255,255,.9);
+    padding: 30px;
+    top: 50%;
+    max-width: 200px;
+    margin: 20px;
+    transform: translateY(-50%);
+    border: 10px solid black;
+    box-shadow: -50px 10px 30px rgba(0,0,0,0);
+    transition: 1s ease;
+}
+
+.rules:hover {
+    background-color: rgba(255,255,255,.9);
+    box-shadow: 0px 0px 100px rgba(248,243,43,.4);
+    border: 10px solid orange;
+}
+
+.rules h2 {
+    margin-top: 0;
+}
+
+.rules ul {
+    margin-bottom: 0;
+}
+
+ul {
+    padding: 0 0 0 20px;
+}
+
+video {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 100;
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0;
+    }
 }
